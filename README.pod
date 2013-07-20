@@ -9,7 +9,7 @@ Dist::Zilla::PluginBundle::Author::LXP - configure Dist::Zilla like LXP
 
 =head1 VERSION
 
-This module is part of distribution Dist-Zilla-PluginBundle-Author-LXP v1.0.0.
+This module is part of distribution Dist-Zilla-PluginBundle-Author-LXP v1.0.1.
 
 This distribution's version numbering follows the conventions defined at L<semver.org|http://semver.org/>.
 
@@ -81,7 +81,7 @@ F<dist.ini> file:
     [NoTabsTests]
 
     ; Assess the distribution's readiness for CPAN.
-    [KwaliteeTests]
+    [Test::Kwalitee]
 
     ;; PHASE: PRUNE FILES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

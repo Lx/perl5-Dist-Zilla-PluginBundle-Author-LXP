@@ -2,6 +2,8 @@ Revision history for Perl extension Pod-Weaver-PluginBundle-Author-LXP
 
 {{$NEXT}}
 
+1.0.1   2013-07-20
+
   - Use the "Test::Kwalitee" plugin instead of the deprecated
     "KwaliteeTests" one.
 
