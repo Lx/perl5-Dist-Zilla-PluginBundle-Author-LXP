@@ -71,7 +71,7 @@ F<dist.ini> file:
     [NoTabsTests]
 
     ; Assess the distribution's readiness for CPAN.
-    [KwaliteeTests]
+    [Test::Kwalitee]
 
     ;; PHASE: PRUNE FILES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -211,7 +211,6 @@ with 'Dist::Zilla::Role::PluginBundle::Easy';
 use Dist::Zilla::Plugin::CheckChangesHasContent ();
 use Dist::Zilla::Plugin::Git (); # for ::Check, ::Commit, ::Tag, ::Push
 use Dist::Zilla::Plugin::InstallGuide ();
-use Dist::Zilla::Plugin::KwaliteeTests ();
 use Dist::Zilla::Plugin::MetaProvides::Package ();
 use Dist::Zilla::Plugin::MinimumPerl ();
 use Dist::Zilla::Plugin::NoTabsTests ();
@@ -220,6 +219,7 @@ use Dist::Zilla::Plugin::PrereqsClean ();
 use Dist::Zilla::Plugin::ReadmeAnyFromPod ();
 use Dist::Zilla::Plugin::Test::Compile ();
 use Dist::Zilla::Plugin::Test::EOL ();
+use Dist::Zilla::Plugin::Test::Kwalitee ();
 use Dist::Zilla::Plugin::Test::PodSpelling ();
 use Dist::Zilla::Plugin::Test::Version ();
 use Pod::Weaver::PluginBundle::Author::LXP ();
@@ -248,7 +248,7 @@ sub configure {
         'MetaTests',
         'Test::EOL',
         'NoTabsTests',
-        'KwaliteeTests',
+        'Test::Kwalitee',
     );
 
     # PHASE: prune files
